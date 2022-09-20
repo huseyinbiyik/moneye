@@ -24,7 +24,7 @@ expense5 = group3.expenses.create(name: "Bought pinpon ball #1", amount: "100", 
 expense6 = group3.expenses.create(name: "Annually gym pay #2", amount: "1500", user_id: user2.id)
 
 expense7 = group4.expenses.create(name: "Saw my doctor #1", amount: "100", user_id: user2.id)
-expense8 = group4.expenses.create(name: "Saw my doctor #2", amount: "100", user_id: user2.id)
+expense8 = group4.expenses.create(name: "Went to lab #2", amount: "100", user_id: user2.id)
 
 
 
