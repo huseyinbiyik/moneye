@@ -24,9 +24,11 @@ class ExpensesController < ApplicationController
   def create
     @expense = Expense.new(expense_params)
     @expense.user_id = current_user.id
-    @expense.group_id = params[:group_id]
+    @group = params[:group_id]
+
     respond_to do |format|
       if @expense.save
+        ExpensesGroup.create(expense_id: @expense.id, group_id: @group)
         format.html { redirect_to group_expenses_path, notice: 'Expense was successfully created.' }
         format.json { render :show, status: :created, location: @expense }
       else
@@ -68,6 +70,6 @@ class ExpensesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def expense_params
-    params.require(:expense).permit(:name, :amount, :group_id)
+    params.require(:expense).permit(:name, :amount)
   end
 end

@@ -21,6 +21,11 @@
     <%= form.text_field :amount %>
   </div>
 
+    <div>
+    <%= form.label :group_id, style: "display: block" %>
+        <%= form.select :group_id, current_user.groups.collect {|group| [group.name, group.id]}, {include_blank: true}, class:"form-select", id:"groupSelect" %>
+  </div>
+
   <div>
     <%= form.submit %>
   </div>
