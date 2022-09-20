@@ -7,6 +7,7 @@ class ExpensesController < ApplicationController
   def index
     @group = current_user.groups.find(params[:group_id])
     @expenses = @group.expenses.order(created_at: :desc)
+    @sum = @expenses.sum(:amount)
   end
 
   # GET /expenses/1 or /expenses/1.json

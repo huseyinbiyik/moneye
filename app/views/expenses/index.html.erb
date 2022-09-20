@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Expenses</h1>
-
+<p>Total: <%= @sum %></p>
 <div id="expenses">
   <% @expenses.each do |expense| %>
     <%= render expense %>
