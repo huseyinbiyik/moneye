@@ -1,14 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
+  <% if current_user %>
 <h1>Groups</h1>
-
 <div id="groups">
   <% @groups.each do |group| %>
     <%= render group %>
     <p>
-      <%= link_to "Show this group", group %>
+      <%= button_to "Show this group", group_expenses_path(group_id: group.id), method: :get	 %>
     </p>
   <% end %>
 </div>
 
 <%= link_to "New group", new_group_path %>
+<% else %>
+<h1>WhereMoney</h1>
+    <%= button_to 'LOG IN',
+        new_user_session_path,
+        method: :get %>
+<%= button_to 'SIGN UP',
+        new_user_registration_path,
+        method: :get %>
+  <% end %>
