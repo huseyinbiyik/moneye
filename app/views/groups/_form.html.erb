@@ -11,17 +11,15 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="form-input-container">
+    <%=  form.text_field :name, placeholder:"Category Name" %>
   </div>
 
-  <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
+  <div class="form-input-container">
+    <%= form.text_field :icon, placeholder:"Icon Image Url"  %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="form-submit-container">
+    <%= form.submit "SAVE" %>
   </div>
 <% end %>
