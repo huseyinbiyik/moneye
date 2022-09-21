@@ -5,4 +5,6 @@ class Group < ApplicationRecord
   def total_amount
     expenses.includes(:groups).sum(:amount)
   end
+
+  validates :name, :icon, presence: true
 end
