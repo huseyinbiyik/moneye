@@ -21,20 +21,41 @@
 }
 
 /* new expense page */
-.form-input-container {
+.expense-input-container {
   margin-bottom: 10px;
 }
-
-.form-input-container > input {
+.expense-input-container > textarea {
+  vertical-align: middle;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  width: 250px;
+  font-family: inherit;
+  resize: none;
+}
+.expense-input-container > input {
   height: 30px;
   width: 250px;
   border: 1px solid rgb(190, 190, 190);
+  box-sizing: border-box;
   border-radius: 5px;
   padding-left: 10px;
 }
 
-.form-submit-container > input {
+.expense-submit-container > input {
   border: 1px solid rgb(190, 190, 190);
   height: 30px;
   width: 100px;
+}
+
+#groupSelect {
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid rgb(190, 190, 190);
 }
