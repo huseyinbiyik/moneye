@@ -12,6 +12,9 @@ gem 'sprockets-rails'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
+# For authorization
+gem 'cancancan'
+
 # Testing helper for Windows users when running tests
 gem 'ffi'
 
