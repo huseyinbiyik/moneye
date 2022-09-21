@@ -37,6 +37,7 @@
   color: #434b55;
 }
 
+/* also used for new transaction button */
 .new-group-btn-container {
   background-color: #5fb523;
   position: fixed;
