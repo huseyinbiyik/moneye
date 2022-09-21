@@ -1,14 +1,16 @@
-<p style="color: green"><%= notice %></p>
+  <%= render "header" %>
+  <%= render "recent_bar" %>
+  <div class="total-container">
+<p>Total Amount:</p>
+<p ><strong> $<%= @sum %></strong></p>
+</div>
 
-<h1>Expenses</h1>
-<p>Total: <%= @sum %></p>
 <div id="expenses">
   <% @expenses.each do |expense| %>
     <%= render expense %>
-    <p>
-      <%= link_to "Show this expense", group_expense_path(id: expense.id) %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New expense", new_group_expense_path %>
+<div class="new-group-btn-container">
+<%= link_to "New Transaction", new_group_expense_path, class:"new-group-btn" %>
+</div>

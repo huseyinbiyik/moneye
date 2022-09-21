@@ -1,0 +1,13 @@
+.most-recent-container {
+  height: 50px;
+  margin-top: -20px;
+  background-color: #3678c2;
+  display: flex;
+  justify-content: center;
+}
+
+.most-recent-text {
+  color: white;
+  line-height: 10px;
+  font-weight: 300;
+}
