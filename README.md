@@ -2,6 +2,9 @@
 
 > A mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+## Live Presentation
+[Watch My Presentation on Loom](https://www.loom.com/share/10d47905b9084e80ba5f057f7176c2a6)
+
 ## Built With
 
 - Ruby
@@ -22,8 +25,8 @@ To get a local copy up and running follow these simple example steps.
 
 To setup linters on your local environment, please follow these steps.
 
-1- Run `bundle install`. <br>
-2- Run `rubocop .` for the errors.
+1- Run `bundle install` <br>
+2- Run `rubocop .` for the errors
 
 To run the tests <br>
 
