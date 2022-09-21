@@ -1,0 +1,64 @@
+.expenses-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 13px -3px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0 0 13px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 0 13px -3px rgba(0, 0, 0, 1);
+  padding: 15px;
+  text-decoration: none;
+  background-color: #fdfdfd;
+  width: 80%;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#expenses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* new expense page */
+.expense-input-container {
+  margin-bottom: 10px;
+}
+
+.expense-input-container > textarea {
+  vertical-align: middle;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  width: 250px;
+  font-family: inherit;
+  resize: none;
+}
+
+.expense-input-container > input {
+  height: 30px;
+  width: 250px;
+  border: 1px solid rgb(190, 190, 190);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.expense-submit-container > input {
+  border: 1px solid rgb(190, 190, 190);
+  height: 30px;
+  width: 100px;
+}
+
+#groupSelect {
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid rgb(190, 190, 190);
+}

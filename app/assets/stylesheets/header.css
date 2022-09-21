@@ -1,0 +1,27 @@
+header {
+  height: 60px;
+  background-color: #3678c2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 13px -3px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0 0 13px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 0 13px -3px rgba(0, 0, 0, 1);
+}
+
+.log-out-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+
+.page-title {
+  font-weight: 700;
+  color: white;
+}
+
+.material-symbols-outlined {
+  color: white;
+}

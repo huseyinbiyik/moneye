@@ -1,0 +1,48 @@
+.splash-logo-container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.auth-btn-container {
+  height: 50vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-btn-container > .button_to {
+  width: 90%;
+  height: 90px;
+}
+
+.splash-logo-container > h1 {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.login-btn {
+  width: 100%;
+  height: 80%;
+  font-size: 24px;
+  font-weight: 100;
+  background-color: #3778c2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.sign-up-btn {
+  width: 100%;
+  height: 80%;
+  font-size: 24px;
+  font-weight: 100;
+  color: #535353;
+  background-color: transparent;
+  border: none;
+}

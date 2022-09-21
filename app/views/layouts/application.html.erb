@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WhereMoney</title>
+    <title>Moneye</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
 
   <body>
-  <% if current_user %>
-    <%= button_to 'Sign-out',
-        destroy_user_session_path,
-        method: :delete,
-        data: { turbo: false} %>
-  <% else %>
-    <%= button_to 'Sign_in',
-        new_user_session_path,
-        method: :get %>
-  <% end %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
