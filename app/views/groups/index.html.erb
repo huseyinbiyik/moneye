@@ -1,0 +1,27 @@
+
+  <% if current_user %>
+  <%= render "header" %>
+<div id="groups">
+  <% @groups.each do |group| %>
+      <%= link_to group_expenses_path(group_id: group.id)  do %>
+    <%= render group %>
+      <%end%>
+  <% end %>
+</div>
+
+<div class="new-group-btn-container">
+<%= link_to "New category", new_group_path, class:"new-group-btn" %>
+</div>
+<% else %>
+<div class="splash-logo-container">
+<h1>Moneye</h1>
+</div>
+<div class="auth-btn-container">
+    <%= button_to 'LOG IN',
+        new_user_session_path, class: "login-btn",
+        method: :get %>
+<%= button_to 'SIGN UP',
+        new_user_registration_path, class: "sign-up-btn",
+        method: :get %>
+  <% end %>
+  </div>
